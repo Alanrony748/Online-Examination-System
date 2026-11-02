@@ -1,0 +1,32 @@
+###
+GET http://127.0.0.1:8000/question/
+Accept: application/json
+
+
+###
+POST http://127.0.0.1:8000/question/
+Content-Type: application/json
+
+{
+    "question":"which is an armstrong number",
+    "option_a":"153",
+    "option_b":"120",
+    "option_c":"170",
+    "option_d":"150",
+    "correct_answer":"153"
+}
+
+###
+GET http://127.0.0.1:8000/answer/
+Accept: application/json
+
+
+###
+POST http://127.0.0.1:8000/answer/
+Content-Type: application/json
+
+{
+    "answer": "Option_b",
+    "question_id": 1,
+    "owner": "Alan"
+}
